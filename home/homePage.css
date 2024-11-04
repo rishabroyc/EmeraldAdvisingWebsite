@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-image {
+    height: 100px; /* Adjust height to your desired size */
+    width: auto; /* Keeps the aspect ratio */
+}
+
+
+body {
+    font-family: 'Garamond', serif;
+    color: #000;
+    background-color: #f4f4f9; /* Light background for contrast */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff; /* White background for the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #fff; /* White background for the dropdown */
+    top: 100%; /* Position below the dropdown button */
+    left: 0;
+    min-width: 160px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    color: #333; /* Text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+/* Dropdown hover effect */
+.dropdown-content a:hover {
+    background-color: #f4f4f9;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the color of the main dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    color: #555; /* Darker color on hover */
+}
