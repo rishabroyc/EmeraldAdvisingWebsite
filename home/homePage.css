@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .logo-image {
-    height: 100px; /* Adjust height to your desired size */
+    height: 20px; /* Adjust height to your desired size */
     width: auto; /* Keeps the aspect ratio */
 }
 
