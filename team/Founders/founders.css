@@ -141,6 +141,12 @@ nav ul li a {
     margin-top: 5px;
 }
 
+.profile .work {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
 .profile .email {
     font-size: 0.9rem;
     color: #999;
