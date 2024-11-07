@@ -1,36 +1,67 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Emerald Advisors</title>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="homePage.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="../images/logos/header.png" alt="Emerald Advisors Logo" class="logo-image">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emerald Advisors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logos/header.png" alt="Emerald Advisors Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homePage.html">Home</a></li>
+                <li class="dropdown">
+                    <a>Team</a>
+                    <div class="dropdown-content">
+                        <a href="../team/Founders/founders.html">Executive</a>
+                        <a href="../team/Associates/associates.html">Associates</a>
+                        <a href="../team/LegalOps/legal.html">Legal & Operations</a>
+                    </div>
+                </li>
+                <li><a href="../recruiting/recruiting.html">Recruiting Success</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Emerald Advisors</h1>
+                <p class="hero-tagline">Pro Bono M&A and Valuation Services for Canadian Lower Middle Market Businesses</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../home/homePage.html">Home</a></li>
-                    <li class="dropdown">
-                        <a>Team</a>
-                        <div class="dropdown-content">
-                            <a href="../team/Founders/founders.html">Executive</a>
-                            <a href="../team/Associates/associates.html">Associates</a>
-                            <a href="../team/LegalOps/legal.html">Legal & Operations</a>
-                        </div>
-                    </li>
-                    <li><a href="../recruiting/recruiting.html">Recruiting Success</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        
-        
-    </body>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <p>Emerald Advisors provides pro bono mergers and acquisitions (M&A) advisory services to lower middle-market businesses in Canada. Our team is dedicated to helping businesses grow by offering buy and sell-side advisory, valuation services, and professionally crafted marketing materials to reach a wider range of acquirers.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3>Buy & Sell-Side Advisory</h3>
+                    <p>We assist businesses on both buy and sell-side transactions, ensuring smooth and strategic deals.</p>
+                </div>
+                <div class="service">
+                    <h3>Valuation Services</h3>
+                    <p>Providing free, comprehensive valuation services to help businesses understand their market worth.</p>
+                </div>
+                <div class="service">
+                    <h3>Marketing Materials</h3>
+                    <p>Creation of teasers and Confidential Information Memorandums (CIM) to help businesses reach a broader audience of acquirers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 </html>

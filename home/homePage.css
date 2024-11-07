@@ -4,16 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .logo-image {
-    height: 20px; /* Adjust height to your desired size */
-    width: auto; /* Keeps the aspect ratio */
+    height: 20px;
+    width: auto;
 }
 
-
+/* Body and Typography */
 body {
     font-family: 'Garamond', serif;
     color: #000;
-    background-color: #f4f4f9; /* Light background for contrast */
+    background-color: #f4f4f9;
 }
 
 /* Header Styling */
@@ -22,14 +23,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #fff; /* White background for the header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-}
-
-.logo h1 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #333;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3; /* Keeps header above the hero section */
 }
 
 nav ul {
@@ -49,44 +48,145 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    cursor: pointer;
-}
-
-/* Dropdown Content Styling */
+/* Dropdown Menu */
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
-    background-color: #fff; /* White background for the dropdown */
-    top: 100%; /* Position below the dropdown button */
+    background-color: #fff;
+    top: 100%;
     left: 0;
     min-width: 160px;
     padding: 10px 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 5; /* Ensure dropdown is above overlay */
     border: 1px solid #ddd;
 }
 
 .dropdown-content a {
-    color: #333; /* Text color */
+    font-weight: normal;
+    color: #333;
     padding: 10px 20px;
     text-decoration: none;
     display: block;
-    font-weight: normal;
 }
 
-/* Dropdown hover effect */
-.dropdown-content a:hover {
-    background-color: #f4f4f9;
-}
-
-/* Show the dropdown on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the color of the main dropdown button when hovered */
-.dropdown:hover .dropbtn {
-    color: #555; /* Darker color on hover */
+/* Hero Section with Background Image */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/homepagebackground/skyline.jpg'); /* Path to background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+/* Optional Overlay to Darken Background Image */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black overlay with 40% opacity */
+    z-index: 1; /* Positioned below the hero content */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure hero content appears above the overlay */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ddd; /* Lighter color for subtitle text */
+}
+
+/* Mission Section */
+.mission-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.mission-section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service {
+    flex: 1 1 30%; /* Ensures three services per row */
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
