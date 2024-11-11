@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-image {
+    height: 20px; /* Adjust height to your desired size */
+    width: auto; /* Keeps the aspect ratio */
+}
+
+
+body {
+    font-family: 'Garamond', serif;
+    color: #000;
+    background-color: #f4f4f9; /* Light background for contrast */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff; /* White background for the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #fff; /* White background for the dropdown */
+    top: 100%; /* Position below the dropdown button */
+    left: 0;
+    min-width: 160px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    color: #333; /* Text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+/* Dropdown hover effect */
+.dropdown-content a:hover {
+    background-color: #f4f4f9;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the color of the main dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    color: #555; /* Darker color on hover */
+}
+
+/* Founders Section Styling */
+.founders-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.founders-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.founders-section .description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows wrapping to a new line on smaller screens */
+}
+
+.profile {
+    text-align: center;
+    width: 18%;
+    max-width: 180px;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.profile .position {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+.profile .work {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.profile .email {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.recruiting-logos {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Logo Image Styling */
+.logos-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 1000px; /* Limits the maximum width */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain; /* Ensures the entire image fits within the container */
+}
