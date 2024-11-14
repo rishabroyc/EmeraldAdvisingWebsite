@@ -131,9 +131,14 @@ nav ul li a {
 }
 
 .profile h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
+    font-size: 1.2rem; /* Adjust font size if needed */
     color: #333;
+    text-align: center;
+    max-width: px; /* Increased max-width to allow longer names */
+    margin: 0 auto;
+    white-space: normal; /* Allow line breaks */
+    line-height: 1.2; /* Adjust line spacing if needed */
+    font-weight: bold;
 }
 
 .profile .position {
