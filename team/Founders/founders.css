@@ -113,25 +113,28 @@ nav ul li a {
 /* Profile Container */
 .profile-container {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
     flex-wrap: wrap; /* Allows wrapping to a new line on smaller screens */
+    margin: 0 auto;
 }
 
 .profile {
     text-align: center;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .profile-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 300px; /* Fixed width for images */
+    height: 260px; /* Fixed height for consistent dimensions */
+    object-fit: cover; /* Ensures images fill the container without stretching */
+    border-radius: 8px; /* Slight rounding for a polished look */
+    margin-bottom: 10px; /* Add space between the image and text */
 }
 
 .profile h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
+    font-size: 1.3rem;
+    margin: 10px 0 5px;
     color: #333;
 }
 
