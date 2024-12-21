@@ -125,11 +125,9 @@ nav ul li a {
 }
 
 .profile-image {
-    width: 300px; /* Fixed width for images */
-    height: 260px; /* Fixed height for consistent dimensions */
-    object-fit: cover; /* Ensures images fill the container without stretching */
-    border-radius: 8px; /* Slight rounding for a polished look */
-    margin-bottom: 10px; /* Add space between the image and text */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .profile h3 {
