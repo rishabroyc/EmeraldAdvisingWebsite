@@ -6,7 +6,7 @@
 }
 
 .logo-image {
-    height: 20px;
+    height: 25px;
     width: auto;
 }
 
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    background-color: #004d40; /* Slightly transparent white */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;

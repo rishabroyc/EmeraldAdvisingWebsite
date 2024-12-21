@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emerald Advisors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logos/header.png" alt="Emerald Advisors Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a>Team</a>
+                    <div class="dropdown-content">
+                        <a href="../team/Founders/founders.html">Executive</a>
+                        <a href="../team/Associates/associates.html">Associates</a>
+                        <a href="../team/LegalOps/legal.html">Legal & Operations</a>
+                    </div>
+                </li>
+                <li><a href="../recruiting/recruiting.html">Recruiting Success</a></li>
+                <li><a href="../Sponsor/sponsors.html">Sponsors</a></li>
+                <li><a href="../contact/contact.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>
+                We look forward to welcoming new partner organizations and meeting potential clients. If you represent an organization involved in private markets or are a student at Ivey Business School, we want to hear from you.
+            </p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | 
+                <a href="#">LinkedIn</a> | 
+                <a href="mailto:info@emeraldadvisors.com">Email</a>
+            </div>
+        </section>
+        <section class="map-container">
+            <div id="map"></div>
+        </section>
+    </main>
+</body>
+<script>
+    function initMap() {
+        const location = { lat: 43.0096, lng: -81.2737 }; // Coordinates for Ivey Business School
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: location,
+        });
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Ivey Private Capital",
+        });
+    }
+    window.onload = initMap;
+</script>
+    
+</body>
+</html>

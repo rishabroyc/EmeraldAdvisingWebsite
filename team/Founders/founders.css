@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .logo-image {
-    height: 20px; /* Adjust height to your desired size */
+    height: 25px; /* Adjust height to your desired size */
     width: auto; /* Keeps the aspect ratio */
 }
 
@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #fff; /* White background for the header */
+    background-color: #004d40; /* White background for the header */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
