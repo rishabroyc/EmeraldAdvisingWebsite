@@ -305,6 +305,17 @@ nav ul li a {
     margin-top: 10px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsors-section {
+    flex: 1;
+}
+
 
 
 
